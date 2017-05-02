@@ -1,0 +1,45 @@
+html{
+	font-family: 'Montserrat', sans-serif;
+}
+
+nav{
+	background: transparent;
+	background: linear-gradient(to bottom, rgba(0,0,0,0.99) 0%,rgba(0,0,0,0.95) 1%,rgba(125,185,232,0) 100%); 
+	box-shadow: none;
+}
+.fullH {
+	display: block;
+	min-height: 100vh;
+	height: 100%;
+	width: 100%;
+	position: relative;
+}
+
+.blueBck {
+	background: linear-gradient(135deg, rgba(16,14,35,1) 1%,rgba(41,137,216,1) 37%,rgba(32,124,202,1) 48%,rgba(47,83,119,1) 100%);
+	background: #286eaa;
+}
+.phoneMaxSize {
+	max-width: 230px !important;
+	width: 100%;
+}
+.bottomCharac{
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	left: 50%;
+	max-width: 1300px;
+	transform: translate(-50%);
+}
+
+.bgText {
+	font-size: 2.2em;
+}
+
+
+
+@media screen and (min-width: 960px) { 
+	.bgText {
+		padding: 50px 0;
+	}
+}
