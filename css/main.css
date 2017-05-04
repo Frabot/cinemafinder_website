@@ -4,7 +4,8 @@ html{
 
 /*Header*/
 #logo{
-	max-width: 20px;
+	width: 100%;
+	max-width: 40px;
 }
 
 /*Navigation*/
@@ -21,16 +22,30 @@ html{
 
 
 /* Overwritting Materialize */
-nav{
-	background: transparent;
-	background: linear-gradient(to bottom, rgba(0,0,0,0.99) 0%,rgba(0,0,0,0.95) 1%,rgba(125,185,232,0) 100%); 
-	box-shadow: none;
-}
+	/*Header*/
+	h1{
+		font-size: 0.9em;
+		margin: 5px 0 0 0;
+	}
+	#logo-container{
+		padding: 0.4em;
+	}
 
-#sidenav-overlay{
-	z-index: 15;
-}
+	/*Navigation*/
+	nav{
+		background: transparent;
+		background: linear-gradient(to bottom, rgba(0,0,0,0.99) 0%,rgba(0,0,0,0.95) 1%,rgba(125,185,232,0) 100%); 
+		box-shadow: none;
+	}
 
+	#sidenav-overlay{
+		z-index: 15;
+	}
+
+/*Overwritting fullpage*/
+ .section{
+ 	background-color: #3486c1 !important;
+ }
 
 .blueBck {
 	background: linear-gradient(135deg, rgba(16,14,35,1) 1%,rgba(41,137,216,1) 37%,rgba(32,124,202,1) 48%,rgba(47,83,119,1) 100%);
