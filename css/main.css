@@ -2,18 +2,35 @@ html{
 	font-family: 'Montserrat', sans-serif;
 }
 
+/*Header*/
+#logo{
+	max-width: 20px;
+}
+
+/*Navigation*/
+.menu{
+	position:fixed;
+	top:0;
+	left:0;
+	height: 40px;
+	z-index: 70;
+	width: 100%;
+	padding: 0;
+	margin:0;
+}
+
+
+/* Overwritting Materialize */
 nav{
 	background: transparent;
 	background: linear-gradient(to bottom, rgba(0,0,0,0.99) 0%,rgba(0,0,0,0.95) 1%,rgba(125,185,232,0) 100%); 
 	box-shadow: none;
 }
-.fullH {
-	display: block;
-	min-height: 100vh;
-	height: 100%;
-	width: 100%;
-	position: relative;
+
+#sidenav-overlay{
+	z-index: 15;
 }
+
 
 .blueBck {
 	background: linear-gradient(135deg, rgba(16,14,35,1) 1%,rgba(41,137,216,1) 37%,rgba(32,124,202,1) 48%,rgba(47,83,119,1) 100%);
@@ -36,16 +53,7 @@ nav{
 	font-size: 2.2em;
 }
 
-.menu{
-	position:fixed;
-	top:0;
-	left:0;
-	height: 40px;
-	z-index: 70;
-	width: 100%;
-	padding: 0;
-	margin:0;
-}
+
 
 @media screen and (min-width: 960px) { 
 	.bgText {
