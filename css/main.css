@@ -73,6 +73,11 @@ html{
     background-position: center;
     background-size: cover;
 }
+.rating{
+    background-image: url(../images/rating.jpg);
+    background-position: center;
+    background-size: cover;
+}
 
 
 
