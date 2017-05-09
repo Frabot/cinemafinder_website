@@ -9,7 +9,7 @@
 		<meta name="keywords"  content="fullpage,jquery,demo,screen,fullscreen,backgrounds,full-screen" />
 		<meta name="Resource-type" content="Document" />
 		<!--Import Google Icon Font-->
-	    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	    <!--Fullpage CSS-->
 		<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
 	    <!--Import materialize.css-->
@@ -34,6 +34,7 @@
 				$('#fullpage').fullpage({
 					anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage'],
 					scrollOverflow: true,
+					scrollBar: true
 				});
 			});
 		</script>
@@ -93,14 +94,14 @@
 		
 	
 				
-						<div class="container">
+						<div class="container ">
 							  <div class="row ">
 								  <div class="col s12 m6 ">
 									<img src="images/map-character.png">
 										
-							</div>
-							<div class="col s12 m6 ">
-                                    <div class="icon-block">
+									</div>
+									<div class="col s12 m6 valign-wrapper ">
+                                    <div class="icon-block fullHeight">
                                         <h2 class="center white-text"><i class="medium material-icons">location_on</i></h2>
                                         <h5 class="center white-text">Wherever you are find the cinema available in your location</h5>
 
@@ -182,7 +183,7 @@
             <footer class="page-footer">
                 <div class="container">
                     <ul>
-                        <img >
+                        <img>
                     </ul>
                 </div>
 	          <div class="footer-copyright">
