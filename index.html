@@ -29,7 +29,7 @@
 			$(document).ready(function() {
 				$('#fullpage').fullpage({
 					anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage'],
-					
+					slidesNavigation: true,
 					scrollBar: true
 				});
 			});
@@ -43,21 +43,21 @@
 <div class="menu">
 		<nav>
 		    <div class="nav-wrapper">
-		      <a id="logo-container" href="#" class="brand-logo"><img class="responsive-img left" id="logo" src="images/logo.png"><h1>Cinema Finder</h1></a>
-		      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+		      <a id="logo-container" href="#firstPage" class="brand-logo"><img class="responsive-img left" id="logo" src="images/logo.png"><h1>Cinema Finder</h1></a>
+		      <a href="#firstPage" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
 		      <ul class="right hide-on-med-and-down">
-		        <li><a href="#section0">The app</a></li>
-		        <li><a href="#section1">Geolocation</a></li>
-		        <li><a href="#section2">Movies</a></li>
-                <li><a href="#section3">Ratings</a></li>  
-		        <li><a href="#section4">Download</a></li>
+		        <li data-menuanchor="firstPage"><a href="#firstPage">The app</a></li>
+		        <li data-menuanchor="secondPage"><a href="#secondPage">Geolocation</a></li>
+		        <li data-menuanchor="3rdPage"><a href="#3rdPage">Movies</a></li>
+                <li data-menuanchor="4thPage"><a href="#4thPage">Ratings</a></li>  
+		        <li data-menuanchor="5thPage"><a href="#5thPage">Download</a></li>
 		      </ul>
 		      <ul class="side-nav" id="mobile-demo">
-		        <li><a href="#section0">The app</a></li>
-		        <li><a href="#section1">Geolocation</a></li>
-		        <li><a href="#section2">Movies</a></li>
-                <li><a href="#section3">Ratings</a></li>  
-		        <li><a href="#section4">Download</a></li>
+		        <li data-menuanchor="firstPage"><a href="#firstPage">The app</a></li>
+		        <li data-menuanchor="secondPage"><a href="#secondPage">Geolocation</a></li>
+		        <li data-menuanchor="3rdPage"><a href="#3rdPage">Movies</a></li>
+                <li data-menuanchor="4thPage"><a href="#4thPage">Ratings</a></li>  
+		        <li data-menuanchor="5thPage"><a href="#5thPage">Download</a></li>
 		      </ul>
 		    </div>
 		</nav>
@@ -65,7 +65,7 @@
 
 <div id="fullpage">
 	 
-	<div class="section present" id="section0">
+	<div class="section present" id="section0" data-menuanchor="firstPage">
 		
 				
 					<div class="container spaceUp">
@@ -86,7 +86,7 @@
 		
 		
 	</div>
-	<div class="section jungle" id="section1">
+	<div class="section jungle" id="section1" data-menuanchor="secondPage">
 		
 	
 				
@@ -111,7 +111,7 @@
 			
 	
 	</div>
-    <div class="section" id="section2">
+    <div class="section" id="section2" data-menuanchor="3rdPage">
 						<div class="container">
 							  <div class="row ">
 								  <div class="col s12 m6 ">
@@ -129,7 +129,7 @@
 							</div>
 					</div>
 	</div>
-    <div class="section rating" id="section3">
+    <div class="section rating" id="section3" data-menuanchor="4thPage">
 		
 	
 				
@@ -154,7 +154,7 @@
 			
 	
 	</div>
-	<div class="section" id="section4">
+	<div class="section" id="section4" data-menuanchor="5thPage">
 		
 			 
                 <div class="container">
@@ -171,9 +171,7 @@
                 </div>
             <footer class="page-footer">
                 <div class="container">
-                    <ul>
-                        <img>
-                    </ul>
+                    
                 </div>
 	          <div class="footer-copyright">
 	            <div class="container">
@@ -181,7 +179,7 @@
 	            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
 	            </div>
 	          </div>
-        </footer>
+            </footer>
 	        
 	</div>	        	
 		
