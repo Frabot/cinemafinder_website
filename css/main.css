@@ -51,6 +51,15 @@ html{
 		z-index: 15;
 	}
 
+    /*Footer*/
+    .page-footer{
+        background: transparent;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+    }
+
+
 /*Overwritting fullpage*/
  .section{
  	background-color: #3486c1 !important;
@@ -88,9 +97,31 @@ html{
     background-size: cover;
 }
 
+.movie-img-order{
+     order: 1;
+}
 
+.movie-txt-order{
+    order:2;
+}
 
-@media screen and (min-width: 960px) { 
+@media screen and (min-width: 700px) { 
+    
+    /*Character pictures media queries*/
+    .amazed_c{
+        max-width: 500px !important;
+        margin: auto !important;
+    }
+    
+    .movie-img-order{
+        order: 2;
+    }
+
+    .movie-txt-order{
+        order:1 ;
+    }
+    
+    /*Features text*/
     .flex{
         display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
         display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
@@ -108,6 +139,8 @@ html{
     .sm-container p {
         text-align: justify;
     }
+    
+    /*First slide*/
 	.bgText {
 		padding: 50px 0;
 	}
