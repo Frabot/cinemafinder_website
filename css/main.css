@@ -25,7 +25,6 @@ html{
 }
 
 .gray{
-    
     background-color: rgba(158,158,158,0.4);
 }
 
@@ -43,7 +42,7 @@ html{
 	/*Navigation*/
 	nav{
 		background: transparent;
-		background: linear-gradient(to bottom, rgba(0,0,0,0.99) 0%,rgba(0,0,0,0.95) 1%,rgba(125,185,232,0) 100%); 
+        background: linear-gradient(to bottom, rgba(0,0,0,1) 30%,rgba(0,0,0,0.77) 46%,rgba(125,185,232,0) 100%);
 		box-shadow: none;
 	}
 
@@ -57,6 +56,7 @@ html{
         position: absolute;
         width: 100%;
         bottom: 0;
+        z-index: 3;
     }
 
 
@@ -68,9 +68,24 @@ html{
 
 /*Main Background and Background picture*/
 .blueBck {
-	background: linear-gradient(135deg, rgba(16,14,35,1) 1%,rgba(41,137,216,1) 37%,rgba(32,124,202,1) 48%,rgba(47,83,119,1) 100%);
-	background: #286eaa;
+	
+    background-image: url(../images/curtain_mobile.jpg);
+    background-position: center;
+    background-size: 100% 100%;
 }
+.rightCurt,
+.leftCurt{
+    display: none;
+}
+    /*Slide 1*/
+    .bottomCharac{
+            position: absolute;
+            width: 800px;
+            left: -40%;
+            transform-origin: center;
+            bottom: 0;
+            overflow: hidden;
+        }
 
     /*Slide 2*/
     .jungle{
@@ -86,20 +101,17 @@ html{
         background-size: cover;
     }
 
-/*Slides elements*/
-    /*Slide 1*/
+    .starry {
+        background-image: url(../images/starry_sky.png);
+        background-position: center;
+        background-size: cover;
+    }
+    
     .phoneMaxSize {
-        max-width: 230px !important;
+        max-width: 100px !important;
         width: 100%;
     }
-    .bottomCharac{
-        position: absolute;
-        width: 100%;
-        bottom: 0;
-        left: 50%;
-        max-width: 1300px;
-        transform: translate(-50%);
-    }
+    
     .bgText {
         font-size: 2.2em;
     }
@@ -109,16 +121,38 @@ html{
          order: 1;
     }
 
+
     .movie-txt-order{
         order:2;
     }
 
 @media screen and (min-width: 700px) { 
-    
-    /*Character pictures media queries*/
+   
+
+/*Character pictures media queries*/
+
+    /*Slide 1*/
+    .bottomCharac{
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+            left: 50%;
+            max-width: 1300px;
+            transform: translate(-50%);
+        }
+    .phoneMaxSize {
+        max-width: 230px !important;
+        width: 100%;
+    }
     .amazed_c{
-        max-width: 500px !important;
-        margin: auto !important;
+        max-width: 350px !important;
+        position: absolute;
+        bottom: 0;
+        z-index: 1;
+        margin: 0 auto;
+        display: block;
+        left:0;
+        right:0;
     }
     
     .movie-img-order{
@@ -152,4 +186,33 @@ html{
 	.bgText {
 		padding: 50px 0;
 	}
+}
+
+@media screen and (min-width: 1000px) { 
+     .blueBck{
+       background: #286eaa;
+       background: radial-gradient( rgba(41,137,216,1) 1%,rgba(32,124,202,1) 37%, rgba(47,83,119,1) 60%,rgba(16,14,35,1) 100%);
+    }
+    .rightCurt{
+        position: absolute;
+        right: 0;
+        height: 100%;
+        width: 200px;
+        top: 0;
+        bottom:0;
+        display: block;
+    }
+    .leftCurt{
+        position: absolute;
+        left: 0;
+        height: 100%;
+        width: 200px;
+        top: 0;
+        bottom:0;
+        display: block;
+    }
+    /*Character pictures media queries*/
+    .amazed_c{
+        max-width: 500px !important;
+    }
 }
