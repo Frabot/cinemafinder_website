@@ -65,45 +65,53 @@ html{
  	background-color: #3486c1 !important;
  }
 
+
+/*Main Background and Background picture*/
 .blueBck {
 	background: linear-gradient(135deg, rgba(16,14,35,1) 1%,rgba(41,137,216,1) 37%,rgba(32,124,202,1) 48%,rgba(47,83,119,1) 100%);
 	background: #286eaa;
 }
-.phoneMaxSize {
-	max-width: 230px !important;
-	width: 100%;
-}
-.bottomCharac{
-	position: absolute;
-	width: 100%;
-	bottom: 0;
-	left: 50%;
-	max-width: 1300px;
-	transform: translate(-50%);
-}
 
-.bgText {
-	font-size: 2.2em;
-}
+    /*Slide 2*/
+    .jungle{
+        background-image: url(../images/map_background.jpg);
+        background-position: center;
+        background-size: cover;
+    }
 
-.jungle{
-    background-image: url(../images/map_background.jpg);
-    background-position: center;
-    background-size: cover;
-}
-.rating{
-    background-image: url(../images/latest.jpg);
-    background-position: center;
-    background-size: cover;
-}
+    /*Slide 4*/
+    .rating{
+        background-image: url(../images/latest.jpg);
+        background-position: center;
+        background-size: cover;
+    }
 
-.movie-img-order{
-     order: 1;
-}
+/*Slides elements*/
+    /*Slide 1*/
+    .phoneMaxSize {
+        max-width: 230px !important;
+        width: 100%;
+    }
+    .bottomCharac{
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        left: 50%;
+        max-width: 1300px;
+        transform: translate(-50%);
+    }
+    .bgText {
+        font-size: 2.2em;
+    }
 
-.movie-txt-order{
-    order:2;
-}
+    /*Slide 3*/
+    .movie-img-order{
+         order: 1;
+    }
+
+    .movie-txt-order{
+        order:2;
+    }
 
 @media screen and (min-width: 700px) { 
     
@@ -121,7 +129,7 @@ html{
         order:1 ;
     }
     
-    /*Features text*/
+    /*Features' text*/
     .flex{
         display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
         display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
