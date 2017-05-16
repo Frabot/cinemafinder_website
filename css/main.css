@@ -20,6 +20,15 @@ html{
 	margin:0;
 }
 
+.space{
+    margin: 15px;
+}
+
+.gray{
+    
+    background-color: rgba(158,158,158,0.4);
+}
+
 
 /* Overwritting Materialize */
 	/*Header*/
@@ -79,12 +88,26 @@ html{
     background-size: cover;
 }
 
-.fullHeight{
-	display: table-cell;
-	vertical-align: middle;
-}
+
 
 @media screen and (min-width: 960px) { 
+    .flex{
+        display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+        display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+        display: -ms-flexbox;      /* TWEENER - IE 10 */
+        display: -webkit-flex;     /* NEW - Chrome */
+        display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+        justify-content: center;
+        align-content: center;
+    }
+    
+    .sm-container {
+        max-width: 350px;
+        margin :auto;
+    }
+    .sm-container p {
+        text-align: justify;
+    }
 	.bgText {
 		padding: 50px 0;
 	}
