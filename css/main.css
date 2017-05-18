@@ -65,6 +65,23 @@ html{
  	background-color: #3486c1 !important;
  }
 
+/*Next slide buttons*/
+.nextSlideFirst{
+    position: absolute;
+    z-index: 4;
+    bottom: 4%;
+    left:0;
+    right: 0;
+    text-align: center;
+}
+.nextSlideSecond{
+    position: absolute;
+    z-index: 4;
+    bottom: 4%;
+    left:0;
+    right: 0;
+    text-align: center;
+}
 
 /*Main Background and Background picture*/
 .blueBck {

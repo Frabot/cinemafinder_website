@@ -30,6 +30,8 @@
 				$('#fullpage').fullpage({
 					anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage', '5thPage'],
 					slidesNavigation: true,
+                    navigation: true,
+				    navigationPosition: 'right',
 					scrollBar: true
 				});
 			});
@@ -79,6 +81,7 @@
 						  <div class="col s12 m6 ">
 								<img class="center responsive-img phoneMaxSize hide-on-small-only" src="images/first_page_mob.png">
 						  </div>
+                            
 					</div>
 				</div>
 						
@@ -87,6 +90,11 @@
 			<img class="leftCurt hide-on-small-only" src="images/left.png">
 			<img class="rightCurt hide-on-small-only" src="images/right.png">
 			<img class="bottomCharac" src="images/charac_bottom.png">
+        
+        
+            <!-- Next slide -->
+            <a href="#secondPage" data-menuanchor="secondPage" class="nextSlideFirst white-text"><i class="fa fa-3x fa-angle-down" aria-hidden="true"></i></a>
+            <a href="#secondPage" data-menuanchor="secondPage" class="nextSlideSecond white-text"><i class="fa fa-3x fa-angle-down" aria-hidden="true"></i></a>
 	</div>
 	<!-- Second slide -->
 	<div class="section jungle scrollspy" id="section1" data-menuanchor="secondPage">
