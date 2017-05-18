@@ -71,7 +71,7 @@ html{
     /*Next slide buttons*/
     .nextSlide{
         position: absolute;
-        display: inline-block;
+        display: none;
         z-index: 4;
         animation: down 1.5s infinite;
         left:50%;
@@ -107,6 +107,8 @@ html{
     /*Character Picture*/
     .mxSize{
         max-width: 300px !important;
+        margin: auto;
+        display: block;
     }
 
     /*Slide 1*/
@@ -118,10 +120,23 @@ html{
             bottom: 0;
             overflow: hidden;
         }
-
+        .phoneMaxSize {
+        max-width: 100px !important;
+        width: 100%;
+    }
+    .bgText {
+        font-size: 2.2em;
+    }
     /*Slide 2*/
     .jungle{
         background-image: url(../images/map_background.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    /*Slide 3*/
+    .street{
+        background-image: url(../images/street_movie.jpg);
         background-position: center;
         background-size: cover;
     }
@@ -146,15 +161,11 @@ html{
         background: #0097a7 !important;
         transition: 0.5s ease;
     }
-    
-    .phoneMaxSize {
-        max-width: 100px !important;
-        width: 100%;
+    .shadow{
+         text-shadow: 1px 1px 2px #000;
     }
     
-    .bgText {
-        font-size: 2.2em;
-    }
+    
 
     /*Slide 3*/
     .movie-img-order{
@@ -168,7 +179,13 @@ html{
 
 @media screen and (min-width: 700px) { 
    
-
+/*Style in fullpage content*/
+    /*Next slide buttons*/
+    .nextSlide{
+        display: inline-block;
+    }
+    
+    
 /*Character pictures media queries*/
 
     /*Slide 1*/
