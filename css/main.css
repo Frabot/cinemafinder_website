@@ -65,41 +65,50 @@ html{
  	background-color: #3486c1 !important;
  }
 
-/*Next slide buttons*/
-.nextSlide{
-    position: absolute;
-    display: inline-block;
-    z-index: 4;
-    animation: down 1.5s infinite;
-    left:50%;
-    text-align: center;
-    transition: all 1s ease;
-    transform-origin:center; 
-    transform: scale(1) translateX(-50%);
-}
-.nextSlide:hover{ 
-    transform-origin:center; 
-    transform: scale(1.15) translateX(-50%);
-    transition: all 1s;
-}
-@keyframes down {
-  0%   {bottom: 4%}
-  50% {bottom: 3%}
-  100% {bottom: 4%}
-}
 
 
-/*Main Background and Background picture*/
-.blueBck {
-	
-    background-image: url(../images/curtain_mobile.jpg);
-    background-position: center;
-    background-size: 100% 100%;
-}
-.rightCurt,
-.leftCurt{
-    display: none;
-}
+/*Style in fullpage content*/
+    /*Next slide buttons*/
+    .nextSlide{
+        position: absolute;
+        display: inline-block;
+        z-index: 4;
+        animation: down 1.5s infinite;
+        left:50%;
+        text-align: center;
+        transition: all 1s ease;
+        transform-origin:center; 
+        transform: scale(1) translateX(-50%);
+    }
+    .nextSlide:hover{ 
+        transform-origin:center; 
+        transform: scale(1.15) translateX(-50%);
+        transition: all 1s;
+    }
+    @keyframes down {
+      0%   {bottom: 4%}
+      50% {bottom: 3%}
+      100% {bottom: 4%}
+    }
+
+
+    /*Main Background and Background picture*/
+    .blueBck {
+
+        background-image: url(../images/curtain_mobile.jpg);
+        background-position: center;
+        background-size: 100% 100%;
+    }
+    .rightCurt,
+    .leftCurt{
+        display: none;
+    }
+    
+    /*Character Picture*/
+    .mxSize{
+        max-width: 300px !important;
+    }
+
     /*Slide 1*/
     .bottomCharac{
             position: absolute;
@@ -124,10 +133,18 @@ html{
         background-size: cover;
     }
 
+    /*Slide 6*/
     .starry {
         background-image: url(../images/starry_sky.png);
         background-position: center;
         background-size: cover;
+    }
+    #download-button{
+        transition: 0.5s ease;
+    }
+    #download-button:hover {
+        background: #0097a7 !important;
+        transition: 0.5s ease;
     }
     
     .phoneMaxSize {
@@ -160,7 +177,7 @@ html{
             width: 100%;
             bottom: 0;
             left: 50%;
-            max-width: 1300px;
+            max-width: 1000px;
             transform: translate(-50%);
         }
     .phoneMaxSize {
