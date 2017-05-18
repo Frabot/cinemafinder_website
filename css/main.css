@@ -66,22 +66,28 @@ html{
  }
 
 /*Next slide buttons*/
-.nextSlideFirst{
+.nextSlide{
     position: absolute;
+    display: inline-block;
     z-index: 4;
-    bottom: 4%;
-    left:0;
-    right: 0;
+    animation: down 1.5s infinite;
+    left:50%;
     text-align: center;
+    transition: all 1s ease;
+    transform-origin:center; 
+    transform: scale(1) translateX(-50%);
 }
-.nextSlideSecond{
-    position: absolute;
-    z-index: 4;
-    bottom: 4%;
-    left:0;
-    right: 0;
-    text-align: center;
+.nextSlide:hover{ 
+    transform-origin:center; 
+    transform: scale(1.15) translateX(-50%);
+    transition: all 1s;
 }
+@keyframes down {
+  0%   {bottom: 4%}
+  50% {bottom: 3%}
+  100% {bottom: 4%}
+}
+
 
 /*Main Background and Background picture*/
 .blueBck {

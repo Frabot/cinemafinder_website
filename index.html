@@ -30,8 +30,6 @@
 				$('#fullpage').fullpage({
 					anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage', '5thPage'],
 					slidesNavigation: true,
-                    navigation: true,
-				    navigationPosition: 'right',
 					scrollBar: true
 				});
 			});
@@ -93,8 +91,8 @@
         
         
             <!-- Next slide -->
-            <a href="#secondPage" data-menuanchor="secondPage" class="nextSlideFirst white-text"><i class="fa fa-3x fa-angle-down" aria-hidden="true"></i></a>
-            <a href="#secondPage" data-menuanchor="secondPage" class="nextSlideSecond white-text"><i class="fa fa-3x fa-angle-down" aria-hidden="true"></i></a>
+         
+            <a href="#secondPage" data-menuanchor="secondPage" class="nextSlide white-text"><i class="fa fa-5x fa-angle-double-down" aria-hidden="true"></i></a>
 	</div>
 	<!-- Second slide -->
 	<div class="section jungle scrollspy" id="section1" data-menuanchor="secondPage">
@@ -121,7 +119,9 @@
 				
 						
 						</div>
-			
+			<!-- Next slide -->
+      
+            <a href="#3rdPage" data-menuanchor="3rdPage" class="nextSlide white-text"><i class="fa fa-5x fa-angle-double-down" aria-hidden="true"></i></a>
 	
 	</div>
 	<!-- Third slide -->
@@ -144,6 +144,9 @@
                                       </div>
 							</div>
 					</div>
+                <!-- Next slide -->
+          
+            <a href="#4thPage" data-menuanchor="secondPage" class="nextSlide white-text"><i class="fa fa-5x fa-angle-double-down" aria-hidden="true"></i></a>
 	</div>
 	<!-- Fourth slide -->
     <div class="section rating scrollspy" id="section3" data-menuanchor="4thPage">
@@ -170,7 +173,9 @@
                             </div>
 						</div>
 			
-	
+	       <!-- Next slide -->
+           
+            <a href="#5thPage" data-menuanchor="5thPage" class="nextSlide white-text"><i class="fa fa-5x fa-angle-double-down" aria-hidden="true"></i></a>
 	</div>
 	<!-- Fifth slide -->
 	<div class="section starry scrollspy" id="section4" data-menuanchor="5thPage">
@@ -212,9 +217,11 @@
 
 	<!-- Script Materialize-->
 	    <script type="text/javascript" src="js/materialize.min.js"></script>
+    
 	<!--Font Awesome-->
     <script src="https://use.fontawesome.com/267f88214e.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
+    
 	<!--Google Analytics script-->
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
